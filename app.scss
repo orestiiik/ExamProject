@@ -1,0 +1,153 @@
+$yellow: #f5d95f;
+$blue: #04508b;
+$red: #b71704;
+$green: #117049;
+$dark: #333333;
+$bg: #fbffed;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Roboto";
+  background: $bg;
+}
+.twister {
+  font-weight: 600;
+  color: $yellow;
+}
+.justify-content-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+.align-items-center {
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  a {
+    font-weight: 700;
+    color: $dark;
+    font-size: 1.6rem;
+    &:hover {
+      color: $red;
+    }
+    &.contact {
+      border-radius: 50px;
+      background: $red;
+      color: #ffffff;
+      padding: 15px 40px;
+    }
+  }
+}
+.blob1 {
+  position: relative;
+  img {
+    width: 100%;
+  }
+  h1 {
+    position: absolute;
+    left: 45%;
+    top: 34%;
+    font-size: 3.5rem;
+    transform: translate(-45%, -20%);
+    color: white;
+  }
+}
+.blob2 {
+  position: absolute;
+  left: 65%;
+  top: 80%;
+  transform: translate(-70%, -80%);
+  img {
+    width: 100%;
+  }
+  h2 {
+    position: absolute;
+    width: 70%;
+    left: 30%;
+    top: 20%;
+    font-size: 1.3rem;
+    transform: translate(-20%, -20%);
+    color: white;
+    font-weight: 200;
+  }
+}
+.img_party {
+  width: 60%;
+}
+.grid-container {
+  display: grid;
+  grid-row-gap: 50px;
+  grid-template-columns: 50% 50%;
+  padding: 10px;
+  .grid-item {
+    position: relative;
+  }
+}
+
+.blob1_2 {
+  position: relative;
+  img {
+    width: 70%;
+  }
+  h1 {
+    position: absolute;
+    width: 55%;
+    left: 20%;
+    top: 30%;
+    transform: translate(-20%, -20%);
+    font-size: 2.5rem;
+    font-weight: 200;
+    color: white;
+  }
+}
+.blob2_1 {
+  position: absolute;
+  top: 0;
+  right: 25%;
+}
+.rounded-block {
+  width: 100%;
+  border-radius: 200px;
+  background: $green;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/Roboto-Bold.ttf"); /* IE9 Compat Modes */
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Roboto-Medium.ttf"); /* IE9 Compat Modes */
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/Roboto-Regular.ttf"); /* IE9 Compat Modes */
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 200;
+  src: url("/fonts/Roboto-Thin.ttf"); /* IE9 Compat Modes */
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src: url("/fonts/Roboto-Light.ttf"); /* IE9 Compat Modes */
+  font-display: swap;
+}
