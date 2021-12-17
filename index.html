@@ -8,13 +8,33 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <nav class="justify-content-evenly align-items-center">
+    <nav class="nav-main justify-content-evenly align-items-center">
       <a href="/">HOME</a>
       <a href="/products">PRODUCTS</a>
       <img src="/images/logo.png" alt="Twister logo" />
       <a href="/rules">RULES</a>
       <a class="contact" href="/contact">CONTACT</a>
     </nav>
+    <div class="navigation">
+      <img id="mobile-logo" src="/images/logo.png" alt="TWISTER logo">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+      <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+          <ul class="navigation__list">
+              <li class="navigation__item"><a href="#" class="navigation__link">HOME</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__link">PRODUCTS</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__link">RULES</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__link">CONTACT</a></li>
+
+              </ul>
+      </nav>
+  </div>
     <main>
       <div class="grid-container">
         <div class="grid-item">
@@ -39,7 +59,7 @@
         </div>
       </div>
       <div class="grid-container">
-        <div class="grid-item justify-content-evenly">
+        <div class="grid-item  grid-item-2 justify-content-evenly">
           <img
             class="img_party"
             src="/images/image_2.svg"
@@ -87,5 +107,24 @@
         <a class="button-blue" href="/rules">SHOW RULES</a>
       </div>
     </section>
+    <footer>
+      <div class="footer">
+        <div class="footer-item">
+          <img src="/images/logo.png" alt="Logo footer twister">
+        </div>
+        <div class="footer-item footer-feedback">
+          <h2>Leave us some feedback...</h2>
+          <input type="text">
+          <br>
+          <a class="button-white">SUBMIT</a>
+        </div>
+        <div class="footer-item footer-nav">
+          <a href="/">HOME</a>
+          <a href="/products">PRODUCTS</a>
+          <a href="/rules">RULES</a>
+          <a href="/contact">CONTACT</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
